@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
     @Table(name = "topico")
     @Entity(name = "Topicos")
     @Getter
-    
+
     public class Topico {
 
         @Id
