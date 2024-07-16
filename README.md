@@ -33,16 +33,16 @@ Este proyecto es una aplicación desarrollada con Spring Boot que proporciona se
 
 ### Configuracion de `application.properties`
 
--spring.datasource.url=jdbc:mysql://localhost:3306/foro_db
--spring.datasource.username=root
--spring.datasource.password=(personal)
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-api.security.secret=${JWT_SECRET:123456}
-spring.flyway.enabled=true
-spring.flyway.locations=classpath:db/migration
-spring.flyway.baseline-on-migrate=true
-spring.flyway.ignore-future-migrations=true
+- spring.datasource.url=jdbc:mysql://localhost:3306/foro_db
+- spring.datasource.username=root
+- spring.datasource.password=(personal)
+- spring.jpa.show-sql=true
+- spring.jpa.properties.hibernate.format_sql=true
+- api.security.secret=${JWT_SECRET:123456}
+- spring.flyway.enabled=true
+- spring.flyway.locations=classpath:db/migration
+- spring.flyway.baseline-on-migrate=true
+- spring.flyway.ignore-future-migrations=true
 
 ## Instalación y Configuración
 
