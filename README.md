@@ -8,7 +8,8 @@ Este proyecto es una aplicación desarrollada con Spring Boot que proporciona se
 - **Maven:** 
 - **Spring Boot:** 
 - **MySQL:** 
-- **IDE:** IntelliJ IDEA (opcional) 
+- **IDE:** IntelliJ IDEA (opcional)
+- **INSOMNIA:**
 
 ## Configuración Inicial del Proyecto
 
@@ -67,6 +68,78 @@ Este proyecto es una aplicación desarrollada con Spring Boot que proporciona se
 3. Configurar las propiedades de conexión a la base de datos MySQL en `application.properties`.
 
 4. Compilar y ejecutar el proyecto.
+
+## Uso de Insomnia para Probar los Endpoints
+
+### Configuración inicial
+
+1. **Abrir Insomnia:**
+   - Descarga e instala Insomnia desde [Insomnia](https://insomnia.rest/download).
+
+2. **Importar la Colección de Endpoints:**
+   - Importa la colección de endpoints proporcionada (`insomnia_collection.json`).
+
+### Obtener un Token JWT
+
+- **POST `/login`**
+  - Cuerpo de la solicitud:
+    ```json
+    {
+      "username": "usuario",
+      "password": "contraseña"
+    }
+    ```
+  - Respuesta exitosa: Devuelve un token JWT válido.
+
+### Incluir el Token en las Solicitudes Protegidas
+
+- Para los endpoints protegidos, incluye el token en el encabezado `Authorization` de tipo Bearer.
+
+### Ejemplos de Endpoints
+
+#### Autenticación
+
+- **POST `/login`**
+  - Cuerpo de la solicitud:
+    ```json
+    {
+      "username": "usuario",
+      "password": "contraseña"
+    }
+    ```
+  - Respuesta exitosa: Devuelve un token JWT válido.
+
+#### Gestión de Temas
+
+- **GET `/topicos`**
+  - Devuelve todos los temas de discusión disponibles.
+
+- **POST `/topicos`**
+  - Cuerpo de la solicitud:
+    ```json
+    {
+      "titulo": "Título del Tema",
+      "contenido": "Contenido del Tema"
+    }
+    ```
+  - Crea un nuevo tema de discusión.
+
+- **GET `/topicos/{id}`**
+  - Devuelve el tema de discusión con el ID especificado.
+
+- **PUT `/topicos/{id}`**
+  - Cuerpo de la solicitud:
+    ```json
+    {
+      "titulo": "Nuevo Título",
+      "contenido": "Nuevo Contenido"
+    }
+    ```
+  - Actualiza el tema de discusión con el ID especificado.
+
+- **DELETE `/topicos/{id}`**
+  - Elimina el tema de discusión con el ID especificado.
+
 
 
 ## Licencia
