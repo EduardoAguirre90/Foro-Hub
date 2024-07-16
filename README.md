@@ -117,10 +117,6 @@ Este proyecto es una aplicación desarrollada con Spring Boot que proporciona se
 - **POST `/topicos`**
   - Cuerpo de la solicitud:
     ```json
-    {
-      "titulo": "Título del Tema",
-      "contenido": "Contenido del Tema"
-    }
     ```
   - Crea un nuevo tema de discusión.
 
@@ -130,10 +126,6 @@ Este proyecto es una aplicación desarrollada con Spring Boot que proporciona se
 - **PUT `/topicos/{id}`**
   - Cuerpo de la solicitud:
     ```json
-    {
-      "titulo": "Nuevo Título",
-      "contenido": "Nuevo Contenido"
-    }
     ```
   - Actualiza el tema de discusión con el ID especificado.
 
