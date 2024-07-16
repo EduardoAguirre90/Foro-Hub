@@ -1,6 +1,6 @@
 # Challenge "Foro Hub"
 
-Este proyecto es una aplicación web desarrollada con Spring Boot que proporciona servicios relacionados con un foro de discusión. Utiliza autenticación basada en tokens JWT para asegurar los endpoints y gestiona operaciones CRUD básicas para los temas de discusión.
+Este proyecto es una aplicación desarrollada con Spring Boot que proporciona servicios relacionados con un foro. Utiliza autenticación basada en tokens JWT para asegurar los endpoints y gestiona operaciones CRUD básicas para los temas de discusión.
 
 ## Requerimientos
 
@@ -67,9 +67,6 @@ spring.flyway.ignore-future-migrations=true
 
 4. Compilar y ejecutar el proyecto.
 
-## Contribuciones
-
-- Si deseas contribuir al proyecto, sigue los pasos estándar de fork y pull request.
 
 ## Licencia
 
