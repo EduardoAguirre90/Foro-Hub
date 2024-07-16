@@ -16,7 +16,8 @@ Este proyecto es una aplicación desarrollada con Spring Boot que proporciona se
 
 - Java (versión 17)
 - Maven 
-- Spring Boot
+- Spring Boot 3.3.1
+- Proyecto en formato JAR
 
 ### Dependencias Agregadas
 
